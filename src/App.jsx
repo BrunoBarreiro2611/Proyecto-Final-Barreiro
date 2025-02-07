@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import ItemListContainer from './components/ItemListContainer';  
 import ItemDetailContainer from './components/ItemDetailContainer';  
+import Checkout from './components/Checkout'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
@@ -22,6 +23,10 @@ function App() {
         <Route 
           path="/item/:id"  
           element={<ItemDetailContainer />} 
+        />
+        <Route 
+          path="/checkout" 
+          element={<Checkout />} 
         />
       </Routes>
     </Router>

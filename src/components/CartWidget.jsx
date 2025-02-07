@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { FaShoppingCart } from 'react-icons/fa'; 
+import { CartContext } from '../context/CartContext'; 
 
 function CartWidget() {
-const cartItems = 5; 
+const { cartItems } = useContext(CartContext);
 
 return (
     <div className="cart-widget d-flex align-items-center">

@@ -1,7 +1,6 @@
-
 import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
-import { Link } from 'react-router-dom';  
+import { Link } from 'react-router-dom';
 import CartWidget from './CartWidget';
 
 function NavBar() {
@@ -10,10 +9,10 @@ return (
     <div className="container-fluid">
         <Navbar.Brand as={Link} to="/">AccesoriosUY</Navbar.Brand>
 
-        <Navbar.Toggle aria-controls="navbarNav" />
+        <Navbar.Toggle aria-controls="navbarNav" aria-label="Toggle navigation" />
 
         <Navbar.Collapse id="navbarNav">
-        <Nav className="ml-auto">
+        <Nav className="ms-auto">
             <Nav.Link as={Link} to="/category/electronics">Electrónica</Nav.Link>
             <Nav.Link as={Link} to="/category/clothing">Ropa</Nav.Link>
             <Nav.Link as={Link} to="/category/accessories">Accesorios</Nav.Link>

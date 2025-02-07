@@ -11,9 +11,11 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -40,33 +42,6 @@
 .read-the-docs {
   color: #888;
 }
-
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: #333;
-  color: white;
-}
-
-nav ul {
-  list-style-type: none;
-  display: flex;
-  gap: 20px;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 16px;
-}
-
-nav .logo img {
-  width: 50px;
-}
-
 
 nav {
   display: flex;
@@ -105,10 +80,19 @@ h2 {
   padding: 20px;
   margin-top: 20px;
 }
-
-
 .cart-widget {
   position: relative;
+}
+.cart-widget .badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  font-size: 12px;
+}
+
+.cart-widget {
+  display: flex;
+  align-items: center;
 }
 
 .cart-widget .badge {
@@ -118,3 +102,15 @@ h2 {
   font-size: 12px;
 }
 
+button {
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
